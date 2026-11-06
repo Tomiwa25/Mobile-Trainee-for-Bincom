@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 
     <title>Muhydeen Ayantomiwa Ayandola | Full-Stack Software Engineer</title>
 </head>
@@ -45,8 +45,8 @@
 
     <section id="about" class="container">
         <h2 class="section-title">About Me</h2>
-        <div style="max-width: 800px; color: var(--text-muted); font-size: 1.05rem;">
-            <p style="margin-bottom: 1.2rem;">
+        <div class="about-content">
+            <p>
                 I am a results-driven Software Engineer with extensive hands-on expertise spanning two core stacks:
                 <strong>PHP/Laravel</strong> for enterprise-scale backends and <strong>JavaScript/TypeScript</strong>
                 (React, Node.js, Express) for responsive frontend and API services.
@@ -216,65 +216,64 @@
 
             <article class="project-card">
                 <div>
-                    <h3>Enterprise Inventory Management System</h3>
+                    <h3>Vroom Style(s) — E-Commerce Platform</h3>
                     <p>
-                        Engineered a full-stack system featuring responsive React interfaces with real-time inventory
-                        tracking and dynamic low-stock alerts. Leveraged PHP/Laravel &amp; Node.js backend services with
-                        secure RESTful APIs for item logging, batch tracking, and relational/NoSQL CRUD optimization.
+                        Full-stack clothing and accessories e-commerce platform built with a TypeScript Express REST API,
+                        Prisma ORM with PostgreSQL data layer, and a high-performance Vite React frontend.
                     </p>
                     <div class="tag-container">
-                        <span class="tag">PHP/Laravel</span>
+                        <span class="tag">TypeScript</span>
                         <span class="tag">React.js</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">MySQL</span>
-                        <span class="tag">Docker</span>
-                        <span class="tag">GitHub Actions</span>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="#" onclick="alert('Portfolio demo link placeholder')">View Architecture &rarr;</a>
-                    <a href="#" onclick="alert('Repository link placeholder')">GitHub Repository &rarr;</a>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <div>
-                    <h3>B2B Logistics & Settlement Service Module</h3>
-                    <p>
-                        Architected transactional microservice components supporting high-volume ledger records,
-                        multi-state wallet updates, and programmatic settlement verifications during engineering
-                        contributions at Sabi.
-                    </p>
-                    <div class="tag-container">
-                        <span class="tag">PHP</span>
-                        <span class="tag">Laravel</span>
+                        <span class="tag">Express.js</span>
+                        <span class="tag">Prisma</span>
                         <span class="tag">PostgreSQL</span>
-                        <span class="tag">Redis</span>
                         <span class="tag">REST API</span>
                     </div>
                 </div>
                 <div class="project-links">
-                    <a href="#" onclick="alert('Case study link')">Case Study &rarr;</a>
-                    <a href="#" onclick="alert('Module overview link')">Service Design &rarr;</a>
+                    <a href="https://github.com/Tomiwa25/Vroom-Style-s-" target="_blank" rel="noopener noreferrer">GitHub Repository &rarr;</a>
                 </div>
             </article>
 
             <article class="project-card">
                 <div>
-                    <h3>Laboratory Workflow Automation Engine</h3>
+                    <h3>VIEK — Client Management System</h3>
                     <p>
-                        Constructed internal automation scripts and relational database tooling to streamline repetitive
-                        quality control testing procedures, increasing overall analytical throughput by 74%.
+                        Comprehensive client management and operations platform featuring secure authentication,
+                        organization management, client and project tracking, and Prisma schema data modeling.
                     </p>
                     <div class="tag-container">
-                        <span class="tag">Automation</span>
                         <span class="tag">JavaScript</span>
-                        <span class="tag">SQL</span>
-                        <span class="tag">QA Protocols</span>
+                        <span class="tag">React.js</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express.js</span>
+                        <span class="tag">Prisma</span>
+                        <span class="tag">REST API</span>
                     </div>
                 </div>
                 <div class="project-links">
-                    <a href="#" onclick="alert('Workflow documentation link')">Documentation &rarr;</a>
+                    <a href="https://github.com/Tomiwa25/viek-client-management-system" target="_blank" rel="noopener noreferrer">GitHub Repository &rarr;</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div>
+                    <h3>Syncord Banking System</h3>
+                    <p>
+                        Robust backend banking system supporting customer onboarding, account lifecycle management,
+                        and core banking transactions, integrated with the NibssByPhoenix API.
+                    </p>
+                    <div class="tag-container">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express.js</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">JWT</span>
+                        <span class="tag">Banking APIs</span>
+                        <span class="tag">Jest</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Tomiwa25/syncord-banking-system" target="_blank" rel="noopener noreferrer">GitHub Repository &rarr;</a>
                 </div>
             </article>
 
@@ -284,7 +283,7 @@
     <!-- LIFE & COMMUNITY / 5+ PHOTOS REQUIREMENT -->
     <section id="gallery" class="container">
         <h2 class="section-title">Life, Team & Community</h2>
-        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+        <p class="section-desc">
             Collaboration, team hackathons, peer code reviews, and community tech meetups with friends and colleagues.
         </p>
 
@@ -317,7 +316,7 @@
             <div class="edu-card">
                 <h4>B.Sc. Biochemistry (Second Class Upper)</h4>
                 <div class="institution">Kwara State University, Malete (2019 – 2023)</div>
-                <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <p>
                     Rigorous analytical methodology, scientific research protocols, and statistical laboratory data
                     analysis.
                 </p>
@@ -339,14 +338,15 @@
     <!-- CONTACT FORM -->
     <section id="contact" class="container">
         <div class="contact-container">
-            <h2 style="font-size: 1.75rem; margin-bottom: 0.5rem; text-align: center;">Get In Touch</h2>
-            <p style="color: var(--text-muted); text-align: center; margin-bottom: 2rem;">
+            <h2>Get In Touch</h2>
+            <p class="contact-subtitle">
                 Available for software engineering roles, contract development, and technical collaborations.
             </p>
 
-            <div style="margin-bottom: 1.5rem; text-align: center; font-size: 0.9rem; color: var(--text-muted);">
+            <div class="contact-info">
                 <span>Email: <strong>Tomiwadennie25@gmail.com</strong></span> &bull;
                 <span>Phone: <strong>09033903055</strong></span> &bull;
+                <span>GitHub: <a href="https://github.com/Tomiwa25" target="_blank" rel="noopener noreferrer"><strong>Tomiwa25</strong></a></span> &bull;
                 <span>Lagos, Nigeria</span>
             </div>
 
@@ -363,15 +363,15 @@
                     <label for="message">Message</label>
                     <textarea id="message" rows="4" required placeholder="Hi Muhydeen, let's talk about..."></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                <button type="submit" class="btn btn-primary btn-full">Send Message</button>
             </form>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <div class="container" style="padding: 1.5rem 0;">
-            <p>&copy; 2026 Muhydeen Ayantomidwa Ayandola. Built with pure HTML5, CSS3 & JavaScript.</p>
+        <div class="container">
+            <p>&copy; 2026 Muhydeen Ayantomiwa Ayandola. Built with pure HTML5, CSS3 & JavaScript.</p>
         </div>
     </footer>
 </body>

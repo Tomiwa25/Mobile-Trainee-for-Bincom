@@ -208,6 +208,20 @@ img {
 /* ----------------------------------------------------
        EXPERIENCE & ABOUT
     ---------------------------------------------------- */
+.about-content {
+    max-width: 800px;
+    color: var(--text-muted);
+    font-size: 1.05rem;
+}
+
+.about-content p {
+    margin-bottom: 1.2rem;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
 .timeline {
     display: flex;
     flex-direction: column;
@@ -369,6 +383,11 @@ img {
 /* ----------------------------------------------------
        PHOTOS / COMMUNITY GALLERY (5+ Images)
     ---------------------------------------------------- */
+.section-desc {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -433,6 +452,11 @@ img {
     margin-bottom: 0.5rem;
 }
 
+.edu-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
 .cert-list {
     list-style: none;
 }
@@ -462,6 +486,34 @@ img {
     padding: 3rem 2rem;
     max-width: 650px;
     margin: 0 auto;
+}
+
+.contact-container h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.contact-subtitle {
+    color: var(--text-muted);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-info {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.contact-info a {
+    color: var(--accent-glow);
+    text-decoration: underline;
+}
+
+.btn-full {
+    width: 100%;
 }
 
 .form-group {
@@ -499,6 +551,10 @@ footer {
     padding: 2.5rem 0;
     color: var(--text-muted);
     font-size: 0.85rem;
+}
+
+footer .container {
+    padding: 1.5rem 0;
 }
 
 /* ----------------------------------------------------
